@@ -1,5 +1,7 @@
 # MyTandas
 
+# Public Toilet Review App
+
 ## Description
 
 This is an open-source app designed to review and rate public toilets. The main objective of this app is to encourage owners and users to maintain cleanliness in public toilets. It also features navigation to the toilets and a tipping feature to contribute or donate to the owners.
@@ -17,6 +19,29 @@ This project uses the MERN stack:
 - **Toilet Reviews and Ratings**: Users can review and rate public toilets based on their cleanliness, facilities, and overall experience.
 - **Navigation**: The app provides directions to the nearest public toilets.
 - **Tips and Donations**: Users can contribute or donate to the toilet owners to support maintenance and cleanliness.
+
+## Architecture
+
+1. **Frontend (React.js)**: The frontend of your application will be built using React.js. You'll have various components such as:
+   - Home: Where users can see a list of toilets, search for toilets, and navigate to other parts of the app.
+   - Toilet Details: Where users can see details about a toilet, including reviews and ratings.
+   - Review Form: Where users can submit their reviews and ratings.
+   - Navigation: Where users can get directions to a toilet.
+   - Donation: Where users can make a donation.
+
+2. **Backend (Express.js & Node.js)**: Your server will be built with Express.js running on Node.js. It will expose APIs for the frontend to consume, such as:
+   - GET /toilets: Fetch a list of toilets.
+   - GET /toilets/:id: Fetch details about a specific toilet.
+   - POST /reviews: Submit a review for a toilet.
+   - GET /navigation/:id: Get directions to a toilet.
+   - POST /donations: Make a donation.
+
+3. **Database (MongoDB)**: MongoDB will be used to store data about toilets, reviews, and donations. You'll have collections such as:
+   - Toilets: Stores data about each toilet.
+   - Reviews: Stores user reviews and ratings for each toilet.
+   - Donations: Stores donation data.
+
+4. **User Authentication**: You might also want to consider adding user authentication so that users can create accounts, submit reviews, and make donations. This could be done using technologies like Passport.js or Firebase Authentication.
 
 ## Getting Started
 
