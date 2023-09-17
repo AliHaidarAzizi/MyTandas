@@ -9,7 +9,7 @@ This is an open-source app designed to review and rate public toilets. The main 
 ## Tech Stack
 
 This project uses the MERN stack:
-- **MongoDB**: A source-available cross-platform document-oriented database program for storage.
+- **PostgreSQL**: A source-available cross-platform document-oriented database program for storage.
 - **Express.js**: A back end web application framework for Node.js for building web applications and APIs.
 - **React**: A JavaScript library for building user interfaces.
 - **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
